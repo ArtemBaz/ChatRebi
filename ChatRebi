@@ -74,7 +74,7 @@
 <script>
   $(function() {
     // Подключаемся к серверу Socket.io
-    const socket = io('https://glitch.com/edit/#!/factual-groovy-editorial');
+    const socket = io('https://factual-groovy-editorial.glitch.me');
 
     // Обработчик получения сообщения от сервера
     socket.on('message', function(data) {
