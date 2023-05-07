@@ -74,7 +74,7 @@
 <script>
   $(function() {
     // Подключаемся к серверу Socket.io
-    const socket = io('https://my-telegram-bot.com');
+    const socket = io('https://excessive-billowy-orange.glitch.me');
 
     // Обработчик получения сообщения от сервера
     socket.on('message', function(data) {
@@ -90,8 +90,8 @@
       $('#chat-input input[type=text]').val('');
 
       // Отправка сообщения в Telegram
-      $.post('https://api.telegram.org/bot{1784366866:AAE2LTnizINEFFTbov4LZc8j1tAANhaest8}/sendMessage', {
-        chat_id: {591497094},
+      $.post('https://api.telegram.org/bot1784366866:AAE2LTnizINEFFTbov4LZc8j1tAANhaest8/sendMessage', {
+        chat_id: 591497094,
         text: message
       });
     });
@@ -101,3 +101,4 @@
 
 </body>
 </html>
+
